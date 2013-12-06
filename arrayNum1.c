@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "arrayMum2.c"
+#include "arrayNum2.c"
 #define MAX 1000
 
 int main(void) {
