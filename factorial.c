@@ -7,6 +7,9 @@ bool checkNumber (int n) {
 	if(n < 0) {
 		printf("负数是没有阶乘的\n");
 		return false;
+	} else if(n > 20){
+		printf("暂时只支持到20以内，不然会爆掉\n");
+		return false;
 	} else {
 		return true;
 	}
@@ -36,7 +39,6 @@ int main(void) {
 	for (i = 0; i < num; i++) {
 		k = num - (i+1);
 		b[k] = num - i;
-		printf("============这里的B[0]是是%d\n", b[k]);
 	}
 	for (j =0; j < num; j++) {
 		resultNumber = resultNumber * b[j];
