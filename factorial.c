@@ -39,5 +39,5 @@ int main(void) {
 		resultNumber = resultNumber * (i + 1);
 	}
 	printf("该数的阶乘是%ld\n", resultNumber);
-	return 1;	
+	return 0;	
 }
