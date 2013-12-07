@@ -35,14 +35,9 @@ int main(void) {
 	int k;
 	resultNumber = 1;
 	num = getNumber();
-
-	for (i = 0; i < num; i++) {
-		k = num - (i+1);
-		b[k] = num - i;
-	}
-	for (j =0; j < num; j++) {
-		resultNumber = resultNumber * b[j];
+	for(i = 0; i < num; i++) {
+		resultNumber = resultNumber * (i + 1);
 	}
 	printf("该数的阶乘是%ld\n", resultNumber);
-	return 1;
+	return 1;	
 }
