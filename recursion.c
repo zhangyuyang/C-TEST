@@ -21,14 +21,14 @@ bool checkNum(int numb) {
 }
 
 
- int recurrence(n) {
+ long recurrence(n) {
 	 if(n == 0) {
 	 	return 1;
 	 } else {	
 	 	if(n == 1) {
 	 		return 1;
 	 	} else {
-	 		return (n * recurrence(n - 1));
+	 		return n * recurrence(n - 1);
 	 	}
 	 }
  }
@@ -36,15 +36,13 @@ bool checkNum(int numb) {
 
 
 int main() {
-	int num;
+	long num;
 	num = getNum();
 	if(!checkNum(num)) {
 		return 0;
 	} else {
 		num = recurrence(num);
 	}
-	printf("答案：阶乘为%d\n", num);
+	printf("答案：阶乘为%ld\n", num);
 	return 1;
 }
-//聪聪啊，这个版本的阶乘是按照递归方法做出来的，但是我测试的时候发现，不如我原来写的那个好用。
-//因为，这个版本我测试0-12的数都是正确的，测试到13的阶乘，就发现开始乱了，后面一直都是乱的，你看看是什么原因。
