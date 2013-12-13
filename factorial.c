@@ -26,6 +26,15 @@ int getNumber(void) {
 	return a;
 }
 
+
+int jiecheng(int n) {
+	if (n == 1) {
+		return 1;
+	} else {
+		return n * jiecheng(n - 1);
+	}
+}
+
 int main(void) {
 	long resultNumber;
 	int num;
@@ -35,9 +44,10 @@ int main(void) {
 	int k;
 	resultNumber = 1;
 	num = getNumber();
-	for(i = 0; i < num; i++) {
-		resultNumber = resultNumber * (i + 1);
-	}
-	printf("该数的阶乘是%ld\n", resultNumber);
+	// for(i = 0; i < num; i++) {
+	// 	resultNumber = resultNumber * (i + 1);
+	// }
+	// printf("该数的阶乘是%ld\n", resultNumber);
+	printf("该数的阶乘是%d\n", jiecheng(num));
 	return 0;	
 }

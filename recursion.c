@@ -46,3 +46,4 @@ int main() {
 	printf("答案：阶乘为%ld\n", num);
 	return 1;
 }
+	
