@@ -19,4 +19,8 @@ int main() {
 	for (int i = 0; i < 10; i++) {
 		printf("%d\n", a[i]);
 	}
+	printf("逆向排序＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n");
+	for (int i = 9; i >= 0; i--) {
+		printf("%d\n", a[i]);
+	}
 }
